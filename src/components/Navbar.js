@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 export default function Navbar(props) { //Always have components start with Capital letters
   return (
@@ -29,4 +30,8 @@ export default function Navbar(props) { //Always have components start with Capi
   </nav>
       </>
   )
+}
+
+Navbar.propTypes = {
+  title: PropTypes.string
 }
