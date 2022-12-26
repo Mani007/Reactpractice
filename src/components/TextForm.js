@@ -2,11 +2,13 @@ import React, {useState} from 'react'
 
 
 export default function TextForm(props) {
-    const clickHandle = () => {
-        console.log("Upper clicked")
+    const clickHandler = () => {
+        //console.log("Upper clicked" + text) // We can access the text value here
+        let newtext = text.toUpperCase(); // text variable is coming from the values of text area
+        setText(newtext);
     }
 
-    const changeHandle = (event) => {
+    const changeHandler = (event) => {
         //console.log("change clicked")
         setText(event.target.value)
     }
@@ -19,10 +21,10 @@ export default function TextForm(props) {
     <h1>{props.headings}</h1>
     <form>
   <div className="form-group">
-    <textarea type="text" className="form-control" id="mybox" onChange={changeHandle} value={text} placeholder="Type your text Here"/>
+    <textarea type="text" className="form-control" id="mybox" onChange={changeHandler} value={text} placeholder="Type your text Here"/>
   </div>
   <br/>
-   <button type="submit" className="btn btn-primary" onClick={clickHandle}>Convert to Upper Case</button>
+   <button type='button' className="btn btn-primary" onClick={clickHandler}>Convert to Upper Case</button>
 </form>
     </>
   )
