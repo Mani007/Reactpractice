@@ -3,8 +3,8 @@ import React, {useState} from 'react'
 
 export default function TextForm(props) {
     const clickHandler = () => {
-        //console.log("Upper clicked" + text) // We can access the text value here
-        let newtext = text.toUpperCase(); // text variable is coming from the values of text area
+        //console.log("Upper clicked" + text) // We can access the text value here and originally the react hook
+        let newtext = text.toUpperCase(); // text variable is coming from the values of react hook
         setText(newtext);
     }
 
