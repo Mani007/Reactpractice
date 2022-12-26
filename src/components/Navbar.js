@@ -35,3 +35,7 @@ export default function Navbar(props) { //Always have components start with Capi
 Navbar.propTypes = {
   title: PropTypes.string
 }
+
+Navbar.defaultProps = {
+  title: "TextUtils"
+}
