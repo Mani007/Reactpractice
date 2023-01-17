@@ -7,12 +7,14 @@ import TextForm from './components/TextForm';
 function App() {
   return (
     <>
-    <Navbar title="Text Utility"/>
+   
     <div className="container my-3">
-      {/* <TextForm headings="Text Area"/> */}
+     <Navbar title="Text Utility"/>
+     <TextForm headings="Text Area"/>
       <About/>
+      {/* <Navbar/> */}
     </div>
-    {/* <Navbar/> */}
+    
    </>
   );
 }
