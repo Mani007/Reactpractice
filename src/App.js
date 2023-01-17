@@ -19,7 +19,7 @@ function App() {
    
     <div className="container my-3">
      <Navbar title="Text Utility" mode={mode} toggleMode={toggleMode}/>
-     <TextForm headings="Text Area"/>
+     <TextForm headings="Text Area" mode={mode}/>
       {/* <About/> */}
       {/* <Navbar/> */}
     </div>

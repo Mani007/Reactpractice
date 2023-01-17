@@ -27,6 +27,7 @@ export default function TextForm(props) {
             id="mybox"
             onChange={changeHandler}
             value={text}
+            style={{backgroundColor: props.mode === 'light'?'white':'grey' }}
             placeholder="Type your text Here"
           />
         </div>
