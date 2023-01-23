@@ -5,6 +5,8 @@ import Alert from './components/Alert';
 import About from './components/About';
 import Navbar from './components/Navbar'; //Always have components start with Capital letters
 import TextForm from './components/TextForm';
+// React Router latest version 6 is now available ere
+// import { BrowserRouter as Router, Switch, Routes, Route, Link } from "react-router-dom";
 
 function App() {
   const [mode, setMode] = useState('dark');
@@ -31,15 +33,21 @@ function App() {
   }
   return (
     <>
-   
+    {/* <Router> */}
     <div className="container my-3">
      <Navbar title="Text Utility" mode={mode} toggleMode={toggleMode}/>
      <Alert alert={alert}/>
      <TextForm headings="Text Area" mode={mode}/>
       {/* <About/> */}
       {/* <Navbar/> */}
+      
+      {/* <Switch>
+        <Route path='/about'>
+          <About/>
+        </Route>
+      </Switch> */}
     </div>
-    
+    {/* </Router> */}
    </>
   );
 }
